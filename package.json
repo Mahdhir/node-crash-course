@@ -2,10 +2,11 @@
   "name": "crash-course",
   "version": "1.0.0",
   "description": "a node crash course",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js",
+    "start-server": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,11 @@
   },
   "homepage": "https://github.com/iamshaunjp/node-crash-course#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "ejs": "^3.1.2",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
+    "mongoose": "^5.12.14",
     "morgan": "^1.10.0"
   }
 }
